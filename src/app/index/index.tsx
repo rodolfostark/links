@@ -4,6 +4,8 @@ import { MaterialIcons } from "@expo/vector-icons"
 import { styles } from "./styles"
 import { colors } from "@/styles/colors"
 
+import { Category } from "@/components/category"
+
 export default function Index() {
     return (
         <View style={styles.container}>
@@ -20,6 +22,9 @@ export default function Index() {
                     />
                 </TouchableOpacity>
             </View>
+            <Category name="Projeto" icon="code" />
+            <Category name="Site" icon="language" />
+            <Category name="Vídeo" icon="movie" />
         </View>
     )
 }
